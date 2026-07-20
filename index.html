@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>❤️ Love Test ❤️</title>
+<style>
+body{
+    background:#ff4d6d;
+    color:white;
+    font-family:Arial;
+    text-align:center;
+    padding:30px;
+}
+input,button{
+    padding:10px;
+    margin:10px;
+    width:250px;
+    border-radius:8px;
+    border:none;
+}
+button{
+    background:red;
+    color:white;
+    font-size:18px;
+}
+</style>
+</head>
+<body>
+
+<h1>❤️ Love Test ❤️</h1>
+
+<input type="text" id="yourName" placeholder="Your Name"><br>
+<input type="text" id="partnerName" placeholder="Partner Name"><br>
+
+<button onclick="loveTest()">Check Love %</button>
+
+<h2 id="result"></h2>
+
+<script>
+function loveTest(){
+    let yourName=document.getElementById("yourName").value;
+    let partnerName=document.getElementById("partnerName").value;
+
+    if(yourName=="" || partnerName==""){
+        alert("Please enter both names");
+        return;
+    }
+
+    let love=Math.floor(Math.random()*51)+50;
+
+    document.getElementById("result").innerHTML=
+    "❤️ "+yourName+" & "+partnerName+
+    "<br><br>Love Score = "+love+"%";
+}
+</script>
+
+</body>
+</html>
