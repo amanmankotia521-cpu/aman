@@ -1,0 +1,18 @@
+print("❤welcome to love test❤")
+
+Patner = input("enter your patner nmae :")
+name = input("enter your Name :")
+age = input("enter your age:")
+age = input("enter your patner age")
+
+print("\ncalculating love score......" \
+"......................." \
+"............")
+
+print("\n 😂Oops! tum ullu Ban gaye!")
+
+print("\n===details===")
+print("your name :",name)
+print("Patner name :",Patner)
+print("age :",age)
+print("patner age:",Patner)
